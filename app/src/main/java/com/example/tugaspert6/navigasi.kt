@@ -40,7 +40,7 @@ fun DataApp(
                 )
             }
 
-            // --- Halaman Daftar / List ---
+            //Halaman Daftar / List
             composable(route = Navigasi.list.name) {
                 Fromlist(
                     modifier = Modifier,
@@ -54,3 +54,17 @@ fun DataApp(
                     }
                 )
             }
+
+            // Halaman Form Pendaftaran
+            composable(route = Navigasi.form.name) {
+                Formpendaftarann(
+                    modifier = Modifier,
+                    onBackListBtn = {
+                        // Kembali ke halaman list
+                        navController.navigate(Navigasi.list.name)
+                    }
+                )
+            }
+        }
+    }
+}
