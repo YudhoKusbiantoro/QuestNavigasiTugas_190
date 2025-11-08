@@ -78,3 +78,22 @@ fun formhome(
                         fontWeight = FontWeight.Bold
                     )
                 }
+                Spacer(modifier = Modifier.height(30.dp))
+                Button(
+                    modifier = Modifier
+                        .fillMaxWidth(1f)
+                        .height(100.dp)
+                        .padding(all = 25.dp),
+                    onClick = onMasukClick
+                ) {
+                    Text(
+                        stringResource(id = R.string.masuk),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 18.sp
+                    )
+                }
+            }
+        }
+    )
+}
+
