@@ -55,3 +55,11 @@ fun formhome(
                     modifier = Modifier
                         .padding(bottom = 20.dp)
                 )
+                val gambar = painterResource(id = R.drawable.logo)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 350.dp)
+                        .padding(all = 5.dp)
+                )
