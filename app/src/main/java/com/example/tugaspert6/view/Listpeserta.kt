@@ -200,6 +200,24 @@ fun Fromlist(
                 }
             }
 
+            Spacer(modifier = Modifier.weight(1f))
+
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Button(
+                    onClick = onBackListBtn,
+                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
+                    elevation = ButtonDefaults.buttonElevation(defaultElevation = 2.dp),
+                    shape = RoundedCornerShape(8.dp),
+                    modifier = Modifier.weight(1f).height(48.dp)
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.btnback),
+                        color = Color.White,
+                        fontWeight = FontWeight.Medium)
+                }
             }
         }
     }
