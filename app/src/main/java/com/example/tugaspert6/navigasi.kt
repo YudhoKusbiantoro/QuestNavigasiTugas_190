@@ -28,3 +28,14 @@ fun DataApp(
             startDestination = Navigasi.home.name,
             modifier = Modifier.padding(innerPadding)
         ) {
+
+            // --- Halaman Awal / Home ---
+            composable(route = Navigasi.home.name) {
+                formhome(
+                    modifier = Modifier,
+                    onMasukClick = {
+                        // Saat tombol masuk ditekan → menuju ke halaman list
+                        navController.navigate(Navigasi.list.name)
+                    }
+                )
+            }
