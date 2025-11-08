@@ -127,6 +127,15 @@ fun Fromlist(
                     }
                 }
             }
+            Spacer(modifier = Modifier.height(20.dp))
+            //card kedua
+            Card(
+                modifier = modifier.fillMaxWidth(),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+            }
+        }
     }
 }
 
