@@ -77,10 +77,17 @@ fun Formpendaftarann(
                 modifier = Modifier.padding(bottom = 16.dp)
             )
 
-                    }
-                }
-            )
-        }
-    }
-}
-
+            Card(
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(580.dp)
+                    .padding(horizontal = 16.dp)
+            ) {
+                Column(
+                    modifier = Modifier
+                        .padding(20.dp)
+                        .verticalScroll(rememberScrollState()),
+                    horizontalAlignment = Alignment.Start
+                ) {
