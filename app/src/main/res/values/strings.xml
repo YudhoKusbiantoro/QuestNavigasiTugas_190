@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TugasPert6</string>
+    <string name="submit">Submit</string>
+    <string name="masuk">Masuk</string>
+    <string name="name">Yudho Kusbiantoro</string>
+    <string name="nim">20230140190</string>
+    <string name="list">List Daftar Peserta</string>
+    <string name="pria">Laki - Laki</string>
+    <string name="wanita">Perempuan</string>
+    <string name="statusnikah1">Janda</string>
+    <string name="statusnikah2">Lajang</string>
+    <string name="statusnikah3">Duda</string>
+    <string name="btnback">Beranda</string>
+    <string name="btnnext">Formulir</string>
+    <string name="namea">Antika Murni</string>
+    <string name="alamat1">Jambi</string>
+    <string name="alamat2">Padang</string>
+    <string name="namalengkap">Nama Lengkap</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="status">Status Pernikahan</string>
+    <string name="alamat">Alamat</string>
+    <string name="judul2">Form Pendaftaran</string>
+    <string name="datadisimpan">Data Berhasil Disimpan</string>
+    <string name="ok">OK</string>
+</resources>
