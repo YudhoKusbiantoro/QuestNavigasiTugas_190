@@ -69,6 +69,15 @@ fun Formpendaftarann(
                 .padding(horizontal = 2.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(
+                text = stringResource(id = R.string.judul2),
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+
+                    }
                 }
             )
         }
