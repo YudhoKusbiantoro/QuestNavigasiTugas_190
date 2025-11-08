@@ -265,6 +265,18 @@ fun Formpendaftarann(
                     }
 
                 },
+                confirmButton = {
+                    Button(
+                        onClick = { showDialog = false },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.purple_700)
+                        )
+                    ) {
+                        Text("OK", color = Color.White)
+                    }
+                }
+            )
+        }
     }
 }
 
