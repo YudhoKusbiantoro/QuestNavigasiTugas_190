@@ -46,3 +46,12 @@ fun formhome(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
+
+                // Header 1
+                Text(
+                    text = "Selamat Datang",
+                    fontSize = 35.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .padding(bottom = 20.dp)
+                )
