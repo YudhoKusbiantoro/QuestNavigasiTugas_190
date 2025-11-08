@@ -59,8 +59,74 @@ fun Fromlist(
                 elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
                 shape = RoundedCornerShape(12.dp)
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    //
+                    Row(
+                        modifier = Modifier.fillMaxWidth()
+
+                    ) {
+                        Column {
+                            Text(
+                                text = stringResource(id = R.string.namalengkap),
+                                fontSize = 12.sp,
+                                color = Color.Blue,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(
+                                text = stringResource(id = R.string.name),
+                                fontSize = 14.sp,
+                                color = Color.Black
+                            )
+
+                        }
+                        Spacer(modifier = Modifier.width(70.dp))
+                        Column {
+                            Text(
+                                text = stringResource(id = R.string.jk),
+                                fontSize = 12.sp,
+                                color = Color.Blue,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(
+                                text = stringResource(id = R.string.pria),
+                                fontSize = 14.sp,
+                                color = Color.Black)
+                        }
+                    }
+                    Row(
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column {
+                            Text(
+                                text = stringResource(id = R.string.status),
+                                fontSize = 12.sp,
+                                color = Color.Blue,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(
+                                text = stringResource(id = R.string.statusnikah2),
+                                fontSize = 14.sp, color = Color.Black)
+                        }
+                        Spacer(modifier = Modifier.width(90.dp))
+                        Column {
+                            Text(
+                                text = stringResource(id = R.string.alamat),
+                                fontSize = 12.sp,
+                                color = Color.Blue,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(
+                                text = stringResource(id = R.string.alamat1),
+                                fontSize = 14.sp,
+                                color = Color.Black)
+                        }
+                    }
+                }
             }
-        }
     }
 }
 
