@@ -53,6 +53,12 @@ fun Fromlist(
                 color = Color.Black,
                 modifier = Modifier.padding(bottom = 16.dp)
             )
+            // card pertama
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
             }
         }
     }
