@@ -187,3 +187,29 @@ fun Formpendaftarann(
                             Text(
                                 text = stringResource(id = R.string.btnback), color = Color.White, fontWeight = FontWeight.Medium)
                         }
+
+                        Button(
+                            onClick = {
+                                // Simpan data hasil input (opsional)
+                                nama = textNama
+                                alamat = textAlamat
+                                jenisKelamin = textJK
+                                statusPerkawinan = textStatus
+
+                                // Tampilkan pop-up
+                                showDialog = true
+                            },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = MaterialTheme.colorScheme.primary
+                            ),
+                            elevation = ButtonDefaults.buttonElevation(defaultElevation = 2.dp),
+                            shape = RoundedCornerShape(8.dp),
+                            modifier = Modifier.weight(1f).height(48.dp)
+                        ) {
+                            Text(
+                                text = stringResource(id = R.string.submit), color = Color.White, fontWeight = FontWeight.Medium)
+                        }
+                    }
+                }
+            }
+        }
