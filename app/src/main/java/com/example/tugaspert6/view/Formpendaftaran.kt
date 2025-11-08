@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -213,3 +214,57 @@ fun Formpendaftarann(
                 }
             }
         }
+        if (showDialog) {
+            AlertDialog(
+                onDismissRequest = { showDialog = false },
+                title = {
+                    Text(
+                        text = stringResource(id = R.string.datadisimpan),
+                        fontWeight = FontWeight.Bold,
+                        fontFamily = FontFamily.SansSerif
+                    )
+                },
+                text = {
+                    Column {
+                        Row {
+                            Text(
+                                text = stringResource(id = R.string.namalengkap),
+                                modifier = Modifier
+                                    .width(120.dp),
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(text = ": $textNama")
+                        }
+                        Row {
+                            Text(
+                                text = stringResource(id = R.string.jk),
+                                modifier = Modifier
+                                    .width(120.dp),
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(text = ": $textJK")
+                        }
+                        Row {
+                            Text(
+                                text = stringResource(id = R.string.status),
+                                modifier = Modifier
+                                    .width(120.dp),
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(text = ": $textStatus")
+                        }
+                        Row {
+                            Text(
+                                text = stringResource(id = R.string.alamat),
+                                modifier = Modifier
+                                    .width(120.dp),
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(text = ": $textAlamat")
+                        }
+                    }
+
+                },
+    }
+}
+
