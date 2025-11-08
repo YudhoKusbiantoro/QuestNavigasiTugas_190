@@ -39,3 +39,18 @@ fun DataApp(
                     }
                 )
             }
+
+            // --- Halaman Daftar / List ---
+            composable(route = Navigasi.list.name) {
+                Fromlist(
+                    modifier = Modifier,
+                    onBackListBtn = {
+                        // Kembali ke beranda
+                        navController.navigate(Navigasi.home.name)
+                    },
+                    onNextListBtn = {
+                        // Menuju ke form pendaftaran
+                        navController.navigate(Navigasi.form.name)
+                    }
+                )
+            }
