@@ -59,7 +59,16 @@ fun Formpendaftarann(
     val gender = listOf("Laki-laki", "Perempuan")
     val status = listOf("Janda", "Lajang", "Duda")
 
-                    }
+    Scaffold(
+        modifier = modifier.fillMaxSize()
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+                .padding(horizontal = 2.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
                 }
             )
         }
