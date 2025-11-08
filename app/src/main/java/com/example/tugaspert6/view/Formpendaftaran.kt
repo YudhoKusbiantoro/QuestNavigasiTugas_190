@@ -105,3 +105,30 @@ fun Formpendaftarann(
                         placeholder = { Text("Isian Nama Lengkap") },
                         modifier = Modifier.fillMaxWidth()
                     )
+
+                    Text(
+                        text = stringResource(id = R.string.jk),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+                    )
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(16.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        gender.forEach { item ->
+                            Row(
+                                modifier = Modifier.selectable(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                ),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                Text(item)
+                            }
+                        }
+                    }
