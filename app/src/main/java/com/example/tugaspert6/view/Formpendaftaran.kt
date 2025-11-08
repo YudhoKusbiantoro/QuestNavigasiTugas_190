@@ -91,3 +91,17 @@ fun Formpendaftarann(
                         .verticalScroll(rememberScrollState()),
                     horizontalAlignment = Alignment.Start
                 ) {
+                    // nama lengkap
+                    Text(
+                        text = stringResource(id = R.string.namalengkap),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(bottom = 8.dp)
+                    )
+                    OutlinedTextField(
+                        value = textNama,
+                        onValueChange = { textNama = it },
+                        singleLine = true,
+                        placeholder = { Text("Isian Nama Lengkap") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
