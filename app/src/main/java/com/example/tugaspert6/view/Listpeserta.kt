@@ -218,6 +218,18 @@ fun Fromlist(
                         color = Color.White,
                         fontWeight = FontWeight.Medium)
                 }
+
+                Button(
+                    onClick = onNextListBtn,
+                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
+                    elevation = ButtonDefaults.buttonElevation(defaultElevation = 2.dp),
+                    shape = RoundedCornerShape(8.dp),
+                    modifier = Modifier.weight(1f).height(48.dp)
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.btnnext),
+                        color = Color.White, fontWeight = FontWeight.Medium)
+                }
             }
         }
     }
