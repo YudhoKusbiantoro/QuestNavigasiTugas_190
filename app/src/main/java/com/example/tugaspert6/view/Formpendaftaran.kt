@@ -132,3 +132,27 @@ fun Formpendaftarann(
                             }
                         }
                     }
+
+                    Text(
+                        text = stringResource(id = R.string.status),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+                    )
+                    Row {
+                        status.forEach { item ->
+                            Row(
+                                modifier = Modifier.selectable(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item }
+                                ),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item }
+                                )
+                                Text(item)
+                            }
+                        }
+                    }
